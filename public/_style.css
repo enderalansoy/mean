@@ -1,0 +1,44 @@
+html {
+    font-family: sans-serif;
+}
+
+h1 {
+    background-color: blue;
+    color: white;
+    padding: 0 8px;
+    border-top: 3px solid blue;
+    border-bottom: 3px solid blue;
+    text-shadow: 2px 2px 1px black;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+ul2 {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+li {
+    margin-bottom: 10px;
+    background-color: lightgray;
+    font-size: 150%;
+    border-top: 3px solid lightgray;
+    border-bottom: 3px solid lightgray;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+}
+
+strong {
+    background-color: blue;
+    color: white;
+    padding: 0 8px;
+    border-top: 3px solid blue;
+    border-bottom: 3px solid blue;
+    text-shadow: 2px 2px 1px black;
+}

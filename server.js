@@ -18,10 +18,6 @@ routes(app);
 
 app.listen(port);
 
-process.on('uncaughtException', function(err) {
-    console.log(err);
-});
-
 // use /public as index folder:
 app.use(express.static('public'));
 

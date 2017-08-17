@@ -18,6 +18,24 @@ exports.list_all_users = function(req, res) {
     });
 };
 
+exports.list_unapproved_users = function(req, res) {
+    user.find({ is_approved: {$ne: true} },
+        function(err, user) {
+            if (err)
+                res.send(err);
+            res.json(user);
+        });
+};
+
+exports.list_approved_users = function(req, res) {
+    user.find({ is_approved: {$ne: false} },
+        function(err, user) {
+            if (err)
+                res.send(err);
+            res.json(user);
+        });
+};
+
 exports.create_a_user = function(req, res) {
     var new_user = new user(req.body);
     new_user.save(function(err, user) {

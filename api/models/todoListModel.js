@@ -88,7 +88,7 @@ var VehicleSchema = new Schema({
         type: Date,
         default: Date.now
     },
-    is_deleted:  {
+    is_deleted: {
         type: [{
             type: Boolean,
             enum: [true, false]
@@ -119,7 +119,7 @@ var JobsSchema = new Schema({
         type: Number,
         required: 'Enter longitude.'
     },
-    number_of_boxes:  {
+    number_of_boxes: {
         type: Number,
         default: 1
     },
@@ -139,7 +139,7 @@ var JobsSchema = new Schema({
         type: Number,
         default: 1
     },
-    is_deleted:  {
+    is_deleted: {
         type: [{
             type: Boolean,
             enum: [true, false]

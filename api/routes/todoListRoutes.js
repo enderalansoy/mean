@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = function(app) {
     var todoList = require('../controllers/todoListController');
 
@@ -6,6 +7,12 @@ module.exports = function(app) {
     app.route('/users')
         .get(todoList.list_all_users)
         .post(todoList.create_a_user);
+
+    app.route('/users/notapproved')
+        .get(todoList.list_unapproved_users);
+    
+    app.route('/users/approved')
+        .get(todoList.list_approved_users);
 
     app.route('/users/id/:userId')
         .get(todoList.read_a_user)
