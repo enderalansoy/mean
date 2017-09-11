@@ -115,6 +115,10 @@ var JobsSchema = new Schema({
     type: Number,
     default: 0
   },
+  customer_name: {
+    type: String,
+    default: 'John Doe'
+  },
   latitude: {
     type: Number,
     required: 'Enter latitude.'
